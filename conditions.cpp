@@ -14,21 +14,21 @@ using namespace std;
 //     }
 //     return 0;
 // }
-
-
 int main(){
 
-    int number;
+    int number1, number2;
     cout<<"Enter a number\n";
-    cin>>number;
+    cin>>number1;
+    cout<<"Enter another number\n";
+    cin>>number2;
 
-    if(number <7){
-        cout<<"this number is small";
-    }else if(number ==7){
-        cout<<"this number is equal 7 ";
+    if(number1 <number2){
+        cout<<number1 *number2;
+    }else if(number1 == number2){
+        cout<< number1 / number2;
     }
     else{
-        cout<<"this number is not small";
+        cout<<number1 +number2;
 
     }
 
