@@ -16,3 +16,17 @@ using namespace std;
 // }
 
 
+int main(){
+
+    int number;
+    cout<<"Enter a number\n";
+    cin>>number;
+
+    if(number<7){
+        cout<<"this nmber us"
+    }else{
+
+    }
+
+    return 0;
+}
