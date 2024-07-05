@@ -22,9 +22,13 @@ int main(){
     cout<<"Enter a number\n";
     cin>>number;
 
-    if(number<7){
-        cout<<"this nmber us"
-    }else{
+    if(number <7){
+        cout<<"this number is small";
+    }else if(number ==7){
+        cout<<"this number is equal 7 ";
+    }
+    else{
+        cout<<"this number is not small";
 
     }
 
