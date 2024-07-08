@@ -20,11 +20,24 @@ int main(){
     */
 
    int x(9), y(-3), result;
-   result = (x==7)? 19 : ((y==19) ? 10 : -928374);
+//    result = (x==7)? 19 : ((y==19) ? 10 : -928374);
 
-   cout<<"result : "<<result<<"\n";
+//    cout<<"result : "<<result<<"\n";
 
+switch (x)
+{
+case 7:
+   result =19;
+    break;
 
+default: switch(y){
+    case 12: result =10; break;
+    default:result = -7;
+}
+
+}
+
+cout<< "result : "<<result<<"\n";
 
     return 0;
 }
