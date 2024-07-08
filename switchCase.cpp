@@ -3,6 +3,7 @@ using namespace std;
 
 int main(){
 
+    /*
     int day;
     cout<<"Enter a day number : ";
     cin>> day;
@@ -16,6 +17,13 @@ int main(){
         case 7: cout<<"Sunday\n";break;
         default:cout<<"There is no such a day\n";
     }
+    */
+
+   int x(9), y(-3), result;
+   result = (x==7)? 19 : ((y==19) ? 10 : -928374);
+
+   cout<<"result : "<<result<<"\n";
+
 
 
     return 0;
