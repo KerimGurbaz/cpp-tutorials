@@ -1,16 +1,16 @@
 #include <iostream>
 using namespace std;
 
-void print(string fname);
+void print(string fname, char letter, string myPlus);
 
 int main (){
 
-    print(" Kerim ");
-    print(" GURBAZ ");
+    print(" Kerim ", 'C', "++");
+    print(" GURBAZ ",'C', "++");
 
     return 0;
 }
 
-void print(string fname){
-    cout<<"Hello "<<fname<<"\n";
+void print(string fname, char letter, string myPlus){
+    cout<<"Hello "<<fname<<"and "<<letter<<myPlus <<endl;
 }
