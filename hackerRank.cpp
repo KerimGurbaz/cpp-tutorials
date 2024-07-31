@@ -97,24 +97,57 @@ using namespace std;
 //     return 0;
 // }
 
+// find max. valeu
+// int main(){
+
+//     int a, b, c, d;
+//     cin>>a >>b >>c>>d;
+
+//     if(a>=b & a >=c  & a>=d){
+//         cout<<a<< endl;
+//     }
+//     if(b>=a & b>=c  & b>=d){
+//         cout<<b<< endl;
+//     }
+//     if(c>=a & c>=b  & c>=d){
+//         cout<<c<< endl;
+//     }
+//     else
+//     cout<<d<<endl;
+
+
+//     return 0;
+// }
+
+// version-2
+
+ int max_of_four(int a, int b, int c, int d){
+
+    int max = 0;
+
+    int arr[4] = {a,b,c,d};
+
+    for(int i = 0; i<4 ;i++){
+        if(arr[i]> max){
+            max = arr[i];
+        }
+    }
+
+
+    return max ; 
+ }
+
 
 int main(){
+   int a,b,c,d;
+   cin>>a>>b>>c>>d;
+   int max = max_of_four(a,b,c,d);
+       int arr[4] = {a,b,c,d};
 
-    int a, b, c, d;
-    cin>>a >>b >>c>>d;
+   cout<< max<<endl;
+   cout<<arr[1]<<endl;
 
-    if(a>=b & a >=c  & a>=d){
-        cout<<a<< endl;
-    }
-    if(b>=a & b>=c  & b>=d){
-        cout<<b<< endl;
-    }
-    if(c>=a & c>=b  & c>=d){
-        cout<<c<< endl;
-    }
-    else
-    cout<<d<<endl;
-
-
-    return 0;
+   return 0;
 }
+
+ 
