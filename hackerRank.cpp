@@ -53,6 +53,7 @@
 // }
 
 #include <iostream>
+#include <cmath>// for using abs function
 
 using namespace std;
 
@@ -151,28 +152,51 @@ using namespace std;
 // }
 
  
+// pointer v-1
 
+// int main(){
 
-int main(){
+//     int a,b, result, sum_abs;
 
-    int a,b, result, sum_abs;
+//     cin>>a>>b ;
 
-    cin>>a>>b ;
+//     result =a+b;
 
-    result =a+b;
+//     cout<< result << endl;
 
-    cout<< result << endl;
-
-    if(a<b){
-        sum_abs = b-a ;
-        cout<<sum_abs<<endl;
-    }
-    else {
-             sum_abs = a-b;
-            cout<<sum_abs<<endl;
-    }
+//     if(a<b){
+//         sum_abs = b-a ;
+//         cout<<sum_abs<<endl;
+//     }
+//     else {
+//              sum_abs = a-b;
+//             cout<<sum_abs<<endl;
+//     }
     
   
 
-    return 0;
+//     return 0;
+// }
+
+
+// pointer v-2
+
+void answer(int *a, int *b){
+    int org_a = *a;
+    
+
+    *a  = *a + *b;
+
+    *b = abs(org_a - *b);
+}
+
+int main(){
+    int a,b;
+
+    cin>>a>>b;
+
+    answer(&a, &b);
+
+    cout<<a<<endl;
+    cout<<b<<endl;
 }
