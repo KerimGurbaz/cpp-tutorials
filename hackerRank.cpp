@@ -121,33 +121,58 @@ using namespace std;
 
 // version-2
 
- int max_of_four(int a, int b, int c, int d){
+//  int max_of_four(int a, int b, int c, int d){
 
-    int max = 0;
+//     int max = 0;
 
-    int arr[4] = {a,b,c,d};
+//     int arr[4] = {a,b,c,d};
 
-    for(int i = 0; i<4 ;i++){
-        if(arr[i]> max){
-            max = arr[i];
-        }
-    }
+//     for(int i = 0; i<4 ;i++){
+//         if(arr[i]> max){
+//             max = arr[i];
+//         }
+//     }
 
 
-    return max ; 
- }
+//     return max ; 
+//  }
+
+
+// int main(){
+//    int a,b,c,d;
+//    cin>>a>>b>>c>>d;
+//    int max = max_of_four(a,b,c,d);
+//        int arr[4] = {a,b,c,d};
+
+//    cout<< max<<endl;
+//    cout<<arr[1]<<endl;
+
+//    return 0;
+// }
+
+ 
 
 
 int main(){
-   int a,b,c,d;
-   cin>>a>>b>>c>>d;
-   int max = max_of_four(a,b,c,d);
-       int arr[4] = {a,b,c,d};
 
-   cout<< max<<endl;
-   cout<<arr[1]<<endl;
+    int a,b, result, sum_abs;
 
-   return 0;
+    cin>>a>>b ;
+
+    result =a+b;
+
+    cout<< result << endl;
+
+    if(a<b){
+        sum_abs = b-a ;
+        cout<<sum_abs<<endl;
+    }
+    else {
+             sum_abs = a-b;
+            cout<<sum_abs<<endl;
+    }
+    
+  
+
+    return 0;
 }
-
- 
