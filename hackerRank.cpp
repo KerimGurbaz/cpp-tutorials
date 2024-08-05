@@ -54,6 +54,7 @@
 
 #include <iostream>
 #include <cmath>// for using abs function
+#include <vector> // dinmik dizi kullanmak icin gerekli
 
 using namespace std;
 
@@ -181,22 +182,46 @@ using namespace std;
 
 // pointer v-2
 
-void answer(int *a, int *b){
-    int org_a = *a;
+// void answer(int *a, int *b){
+//     int org_a = *a;
     
 
-    *a  = *a + *b;
+//     *a  = *a + *b;
 
-    *b = abs(org_a - *b);
-}
+//     *b = abs(org_a - *b);
+// }
+
+// int main(){
+//     int a,b;
+
+//     cin>>a>>b;
+
+//     answer(&a, &b);
+
+//     cout<<a<<endl;
+//     cout<<b<<endl;
+// }
+
+
 
 int main(){
-    int a,b;
 
-    cin>>a>>b;
+    int n;
+    cin>> n;
+    cout<< n<<endl;
 
-    answer(&a, &b);
+    vector<int> numbers(n);
 
-    cout<<a<<endl;
-    cout<<b<<endl;
+
+    for(int i = 0; i<n; i++){
+        cin>>numbers[i];
+    }
+
+    //Printing numbers in reverse order
+
+    for(int i = n-1 ; i>=0; i--){
+        cout<<numbers[i]<< " "; 
+    }
+
+    return 0;
 }
