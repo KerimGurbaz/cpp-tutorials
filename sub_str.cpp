@@ -19,9 +19,11 @@ int main(){
     cout<<"Please enter your password: ";
     getline(cin, enterCode);
     if(password.compare(enterCode)!=0)
-    cout<<"password isn't correct";
+    cout<<"password isn't correct"<<endl;
     else
     cout<<"password is correct"<<endl;
+
+    cout<<"hello world"<<endl;
 
 
 
