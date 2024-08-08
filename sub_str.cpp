@@ -13,7 +13,7 @@ int main(){
 
     cout<<i<<endl;
     cout<<"merhaba: "<<9<<endl;
-    cout<<"selam : "<<0.33 * 24;
+    cout<<"selam : "<<0.33 * 24<<endl;
 
 
     // string password ="hope";
@@ -27,6 +27,13 @@ int main(){
     // cout<<"password is correct"<<endl;
 
     // cout<<"hello world"<<endl;
+    int result = 5/2;
+    cout<<result<<endl;
+    float x = 5.0;
+    int res = x/2;
+    cout<<(3 == 5) << (3 == 3)<<endl;
+
+  
 
 
 
