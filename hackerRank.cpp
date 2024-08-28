@@ -52,11 +52,11 @@
 //     return 0;
 // }
 
-#include <iostream>
-#include <cmath>// for using abs function
-#include <vector> // dinmik dizi kullanmak icin gerekli
+// #include <iostream>
+// #include <cmath>// for using abs function
+// #include <vector> // dinmik dizi kullanmak icin gerekli
 
-using namespace std;
+// using namespace std;
 
 // Belirli bir sayının İngilizce karşılığını yazdıran fonksiyon
 // void printNumberInWords(int num) {
@@ -204,24 +204,65 @@ using namespace std;
 
 
 
+// int main(){
+
+//     int n;
+//     cin>> n;
+//     cout<< n<<endl;
+
+//     vector<int> numbers(n);
+
+
+//     for(int i = 0; i<n; i++){
+//         cin>>numbers[i];
+//     }
+
+//     //Printing numbers in reverse order
+
+//     for(int i = n-1 ; i>=0; i--){
+//         cout<<numbers[i]<< " "; 
+//     }
+
+//     return 0;
+// }
+
+
+#include <iostream>
+#include <vector>
+using namespace std ;
+
+
 int main(){
 
-    int n;
-    cin>> n;
-    cout<< n<<endl;
-
-    vector<int> numbers(n);
-
-
-    for(int i = 0; i<n; i++){
-        cin>>numbers[i];
+ int n, q;
+    
+    // Ilk satirdaki n ve q'yu oku
+    cin >> n >> q;
+    
+    // Tum dizileri tutacak olan ana vector
+    vector<vector<int>> arrays(n);
+    
+    // n adet diziyi oku
+    for (int i = 0; i < n; i++) {
+        int k;
+        cin >> k; // Bu dizinin eleman sayisi
+        
+        // Bu diziyi olustur ve elemanlari oku
+        arrays[i].resize(k);
+        for (int j = 0; j < k; j++) {
+            cin >> arrays[i][j];
+        }
+    }
+    
+    // q adet sorguyu oku ve yanitla
+    for (int i = 0; i < q; i++) {
+        int arrayIndex, elementIndex;
+        cin >> arrayIndex >> elementIndex;
+        
+        // Istenen elemani ekrana yazdir
+        cout << arrays[arrayIndex][elementIndex] << endl;
     }
 
-    //Printing numbers in reverse order
-
-    for(int i = n-1 ; i>=0; i--){
-        cout<<numbers[i]<< " "; 
-    }
 
     return 0;
 }
