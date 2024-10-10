@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+/*
 int main(){
 
 for (int i = 1; i <= 5; ++i) {
@@ -22,5 +22,26 @@ for (int i = 1; i <= 5; ++i) {
 }
 
 }
+*/
+int main (){
+
+for (int i = 'C'; i >= 'A'; --i) {
+    switch (i) {
+        case 'B':
+            cout << 2;
+            break;
+        default:
+            cout << 1;
+        case 'C':
+            cout << 3;
+            continue;
+    }
+    cout << 0;
+}
+
+    return 0;
+}
+
+
 
 
